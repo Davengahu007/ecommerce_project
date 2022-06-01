@@ -1,0 +1,34 @@
+        login_btn.setOnMouseClicked((new EventHandler<MouseEvent>() {
+            public void handle(MouseEvent event) {
+
+                try {
+                    //Request for connection
+                    Class.forName("com.mysql.cj.jdbc.Driver");
+                    //Creating the Connection
+                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost/exercise?", "root", "");
+                    //Create the statement object
+                    Statement st = con.createStatement();
+                    //Step Four
+                    String query = "SELECT * FROM exercise.users Where username = " + username + " AND password=" + password + "";
+                    ResultSet rs = st.executeQuery(query);
+
+                    if (rs.next()) {
+                        Alert al = new Alert(Alert.AlertType.CONFIRMATION);
+                        al.setContentText("Successful Login");
+                        al.show();
+                        Home h = new Home();
+                        h.start(Home.homeStage);
+                    } else {
+                        Alert al = new Alert(Alert.AlertType.WARNING);
+                        al.setContentText("Invalid Credentials");
+                        al.show();
+
+                    }
+                    con.close();
+                }
+                    catch (Exception ee) {System.out.println(ee);System.out.println("Connection error");}
+                
+
+                
+            }
+        }));

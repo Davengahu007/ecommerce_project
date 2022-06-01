@@ -1,0 +1,30 @@
+body h1 + p.special {
+  color: yellow;
+  background-color: black;
+  padding: 5px;
+}
+
+p,a{
+  border: 2px solid blue;
+  padding: 20px;
+  display: block;
+  margin: 20px;
+  width: 50%;
+  border-radius: 20px;
+}
+
+a:link{
+  color:blue;
+}
+
+a:visited{       /*Must always come after a:link */
+  color:darkblue;
+}
+
+a:hover{         /*Must always come after a:link and a:visited */
+  color:yellow;
+}
+
+a:active{        /*Must always come after a:link, a:visited and a:hover */
+  color:purple;
+}
