@@ -121,26 +121,3 @@ form .button input:hover, form .button input:focus, form .button input:active{
 form.User_Signup_details .input-box{
   margin-bottom: 20px;
 }
-
-
-.No_account{
-  position: absolute;
-  top:350px;
-  left:400px;
-}
-
-.No_account a{
-  text-decoration:none;
-  color:black;
-}
-
-.No_account2{
-  position: absolute;
-  top:370px;
-  left:400px;
-}
-
-.No_account2 a{
-  text-decoration:none;
-  color:black;
-}

@@ -4,12 +4,13 @@
 }
 
 
+
 .center{
   position: absolute;
-  width: 273px;
-  height: 220px;
-  left: 640px;
-  top: -20px;
+  width: 223px;
+  height: 180px;
+  left: 670px;
+  top: 10px;
 
 }
 .Volkraicon{
@@ -17,7 +18,7 @@
   width: 500px;
   height: 177px;
   left: 580px;
-  top: 130px;
+  top: 170px;
   font-family: 'Macondo';
   font-style: normal;
   font-weight: 400;
@@ -29,13 +30,13 @@
 
 
 body{
-  background-color: white;
+  background-color: #e6edec;
   height: 100vh;
 }
 
 nav ul{
   position: absolute;
-  top:240px;
+  top:280px;
   left:30px;
 
   list-style: none;
@@ -124,9 +125,42 @@ nav ul li a:hover,nav ul li a:focus,nav ul li a:active{
 .search{
   position:absolute;
   left:1430px;
-  top:290px;
+  top:310px;
   transform:translate(-50%,-50%);
 }
+
+.cart_div {
+  position:absolute;
+  left:1500px;
+  top:250px;
+  transform:translate(-50%,-50%);
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 20px;
+  padding-left:10px;
+  padding-right:15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.cart_div a{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  -webkit-transition-property:box-shadow,transform;
+  transition-property:transform;
+  -webkit-transition-duration:0.3s;
+  transition-duration:0.3s;
+}
+
+.cart_div a:hover, .cart_div a:hover, .cart_div a:hover{
+  -webkit-transform:scale(1.05);
+  transform:scale(1.05);
+  text-decoration: underline;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.10), 0px 2px 2px rgba(0, 0, 0, 0.10);
+}
+
 input{
   border: 2px solid black;
   height:40px;
@@ -137,6 +171,8 @@ input{
   transition-property:transform;
   -webkit-transition-duration:0.5s;
   transition-duration:0.5s;
+  background-color: #e6edec;
+  color: black;
 }
 
 input:hover,input:focus{
@@ -164,7 +200,7 @@ color: #00010C;
 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 position: absolute;
 left: 645px;
-top:340px;
+top:380px;
 }
 
 .notion{
@@ -176,7 +212,7 @@ line-height: 29px;
 text-align: center;
 color: #000000;
 position: absolute;
-top:420px;
+top:440px;
 left:200px;
 }
 
@@ -201,6 +237,11 @@ transition-duration:0.3s;
 -webkit-transition-property:box-shadow,transform;
 transition-property:box-shadow,transform;
 text-decoration: none;
+}
+
+.shopbutton a{
+  text-decoration: none;
+  color: white;
 }
 
 .shopbutton:hover, .shopbutton:focus, .shopbutton:active{
@@ -313,6 +354,7 @@ transition-duration:0.3s;
   -webkit-transform:scale(1.1);
   transform:scale(1.1);
 }
+
 
 .DISCOVER_WITH_US_ICON{
   position: absolute;
@@ -512,3 +554,58 @@ p::first-letter{
   transform:scale(1.1);
   text-decoration: underline;
 }
+
+
+.welcome{
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  top:260px;
+  left:40px;
+  font-family: 'Macondo';
+  color: grey;
+  display: flex;
+
+}
+
+.welcome .usericonimage{
+  width:30px;
+  height:30px;
+}
+
+  .welcome .name{
+    color: black;
+  }
+
+
+  .logout_div {
+    position:absolute;
+    left:1430px;
+    top:250px;
+    transform:translate(-50%,-50%);
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 20px;
+    padding-left:10px;
+    padding-right:15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .logout_div a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    -webkit-transition-property:box-shadow,transform;
+    transition-property:transform;
+    -webkit-transition-duration:0.3s;
+    transition-duration:0.3s;
+  }
+
+  .logout_div a:hover, .logout_div a:hover, .logout_div a:hover{
+    -webkit-transform:scale(1.05);
+    transform:scale(1.05);
+    text-decoration: underline;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.10), 0px 2px 2px rgba(0, 0, 0, 0.10);
+  }
